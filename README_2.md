@@ -34,3 +34,35 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+## Vinh
+# 5. Hướng dẫn dùng thư viện ShadCn UI với Next.js
+# https://www.youtube.com/watch?v=BeZ8E0v8VAI
+# 6. CSS style trong Next.js
+# https://www.youtube.com/watch?v=sjm9W5MmGH4
+
+# https://ui.shadcn.com/docs/installation/next
+
+```bash
+# Start by creating a new Next.js project using create-next-app:
+npx create-next-app@latest my-app --typescript --tailwind --eslint
+
+# Run the shadcn-ui init command to setup your project:
+npx shadcn-ui@latest init
+#
+npx shadcn-ui@latest add button
+#
+npx shadcn-ui@latest add input
+#
+npx shadcn-ui@latest add label
+#
+npx shadcn-ui@latest add form
+#
+npx shadcn-ui@latest add toast
+#
+npm i react-hook-form
+#
+npm i zod
+```
+

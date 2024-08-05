@@ -1,3 +1,7 @@
+import SimpleSearch from "@/components/pages/SimpleSearch";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import Image from "next/image";
 
 export default function Home() {
@@ -8,6 +12,7 @@ export default function Home() {
           Get started by editing&nbsp;
           <code className="font-mono font-bold">src/app/page.tsx</code>
         </p>
+
         <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
           <a
             className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
@@ -37,6 +42,31 @@ export default function Home() {
           height={37}
           priority
         />
+      </div>
+
+      <div className="space-y-10">
+        <div className="space-y-2 border-2 border-sky-500 rounded">
+          <div className="grid w-full max-w-sm items-center gap-1.5">
+            <Label htmlFor="email">Email</Label>
+            <Input type="email" id="email" placeholder="Email" />
+          </div>
+
+          <div className="flex w-full max-w-sm items-center space-x-2">
+            <Input type="file" placeholder="Email"></Input>
+          </div>
+
+          <div className="flex w-full max-w-sm items-center space-x-2">
+            <Input type="text" placeholder="Email"></Input>
+            <Input type="checkbox" placeholder="Email"></Input>
+            <Button type="submit" variant={'outline'}>Subscribe</Button>
+          </div>
+        </div>
+
+        <div className="border-2 border-red-500 rounded">
+          <div className="flex w-full max-w-sm items-center space-x-2">
+            <SimpleSearch />
+          </div>
+        </div>
       </div>
 
       <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
