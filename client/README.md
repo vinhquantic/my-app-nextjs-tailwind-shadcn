@@ -61,8 +61,12 @@ npx shadcn-ui@latest add form
 #
 npx shadcn-ui@latest add toast
 #
+npx shadcn-ui@latest add radio-group
+#
 npm i react-hook-form
 #
 npm i zod
+#
+npm i sass
 ```
 
